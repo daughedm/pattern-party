@@ -7,7 +7,9 @@
 #000000
 #2F2235
 #34D1D1 */
-* {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -44,12 +46,17 @@ body {
 .divider-line {
     flex-grow:1;
     height: 1px;
-    background-color: #666666;
+    background-color: #d1d2d3;
 }
 
 .main-wrapper {
   width: 80%;
   margin: auto;
+}
+
+.tab-wrapper {
+  display: flex;
+
 }
 
 .aqua {
@@ -97,7 +104,7 @@ main {
   background: #fff;
 }
 
-section {
+.accordian-section {
   display: none;
   padding: 40px 40px;
   border: 1px solid #d1d2d3;
@@ -151,13 +158,59 @@ input:checked+label {
   background-size: cover;
   background-position: center;
   width: 30%;
-  height: 400px;
+  height: 350px;
 
 }
 
 .article-content {
   display: inline-block;
-  width: 65%;
+  width: 69%;
   vertical-align: top;
-  padding: 20px;
+  padding: 20px 20px 20px 40px;
+}
+
+.view-code {
+  background-color: #2F2235;
+  color: #fff;
+  border: none;
+  margin: 40px auto;
+  display: block;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+}
+
+a {
+  color: #fff;
+  text-decoration:none;
+}
+
+.card {
+  border: 1px solid #d1d2d3;
+}
+
+.card-title {
+  background-color: #fff;
+}
+
+.fpo-image {
+  background-image: url('../assets/fpo.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 220px;
+}
+
+.two-wide {
+  width: 66%;
+  height: 250px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.one-wide {
+  width: 33%;
+  height: 250px;
+  display: inline-block;
+
 }
