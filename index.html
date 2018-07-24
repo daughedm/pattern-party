@@ -9,11 +9,14 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen" href="styles/normalize.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="styles/styles.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <script src=""></script>
+  
 </head>
 
 <body>
+
+  <!-- tabs -->
   <header class="header-container">
     <div class="header-wrapper">
       <h2 class="white light inline-block">PATTRN
@@ -110,10 +113,10 @@
       </article>
     </section>
     <button class="view-code">
-      <a href="#">VIEW CODE</a>
+      <a href="https://codepen.io/daughedm/pen/yqXJqO">VIEW CODE</a>
     </button>
 
-
+<!-- flex cards -->
     <div class="divider-header">
       <div class="grey light divider-text">FLEXIBLE CARDS</div>
       <div class="divider-line"></div>
@@ -142,10 +145,10 @@
       </div>
     </section>
     <button class="view-code">
-      <a href="#">VIEW CODE</a>
+      <a href="https://codepen.io/daughedm/pen/yqXJqO">VIEW CODE</a>
     </button>
     
-    
+    <!-- header bar -->
     <div class="divider-header">
       <div class="grey light divider-text">HEADER BAR</div>
       <div class="divider-line"></div>
@@ -156,17 +159,31 @@
         <a class="navlink hide" href="#">Navigation Link 1</a>
         <a class="navlink hide"href="#">Navigation Link 2</a>
         <a class="navlink hide"href="#">Navigation Link 3</a>
-        <a class="navlink appear"href="#">MENU</a>
+        <a class="navlink appear" id="menu" href="#">MENU</a>
         <div class="search hide">
           <span class="fa fa-search"></span>
           <input class="input-search" type="text" placeholder="Search"/>
         </div>
       </nav>
+      <div class="dropdown">
+        <ul class="drop-list">
+          <li class="item"><a href="#">Navigation Link 1</a></li>
+          <li class="item"><a href="#">Navigation Link 2</a></li>
+          <li class="item"><a href="#">Navigation Link 3</a></li>
+          <li class="item"> 
+            <div class="dropdown-search">
+            <span class="fa fa-search"></span>
+            <input class="dropdown-input-search" type="text" placeholder="Search"/>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section> 
     <button class="view-code">
-      <a href="#">VIEW CODE</a>
+      <a href="https://codepen.io/daughedm/pen/yqXJqO">VIEW CODE</a>
     </button>
   </div>
+  <script src="scripts/sripts.js"></script>
 </body>
 
 </html>
